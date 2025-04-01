@@ -1,8 +1,73 @@
+import { HistoryContainer, HistoryList, Status } from "./styles";
 
 export function History() {
   return (
-    <div>
-      <h2>History</h2>
-    </div>
+    <HistoryContainer>
+      <h2>Histórico</h2>
+      <HistoryList>
+        <table>
+          <thead>
+            <tr>
+              <th>Tarefa</th>
+              <th>Duração</th>
+              <th>Início</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="green">Concluído</Status></td>
+            </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="green">Concluído</Status></td>
+            </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="green">Concluído</Status></td>
+            </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="green">Concluído</Status></td>
+            </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="green">Concluído</Status></td>
+            </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="green">Concluído</Status></td>
+            </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="red">Interrompido</Status></td>
+            </tr>
+            <tr>
+              <td>Tarefa</td>
+              <td>25 min</td>
+              <td>há 2 meses</td>
+              <td><Status statusColor="yellow">Em Andamento</Status></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </HistoryList>
+
+    </HistoryContainer>
   );
 }

@@ -7,7 +7,7 @@ import { Timer } from "phosphor-react";
 export function Header() {
     return (
         <HeaderContainer>
-            <img src={logo} alt="" />
+            <img src={logo} width={40} alt="" />
             <nav>
                 <NavLink to="/" title="Timer" className={({ isActive }) => isActive ? 'active' : ''}>
                     <Timer size={24} />
